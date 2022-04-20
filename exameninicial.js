@@ -171,3 +171,51 @@ const res = (descripcionSuscripcion, tiposDeSuscripcion) => {
   }
 };
 console.log(res(descripcionSuscripcion, tiposDeSuscripcion));
+
+// Ciclos
+/* 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+
+¿Qué es un ciclo?
+r. un ciclo es un bloque de codigo que se repite N cantidad de veces hasta que se cumpla la condicion
+
+¿Qué tipos de ciclos existen en JavaScript?
+r. while, do while, for
+
+¿Qué es un ciclo infinito y por qué es un problema?
+r. un ciclo infinito sucede cuando no se cumple la condicion de cierre y genera el proceso infinitas veces generando consumo elevado de memoria y provocando el colapso del sistema
+
+
+¿Puedo mezclar ciclos y condicionales?
+r. si, incluso los ciclos se complentan con condicionales para funcionar de forma adecuada
+*/
+
+// 2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+for (let i = 0; i < 5; i++) {
+  console.log("El valor de i es: " + i);
+}
+for (let i = 10; i >= 2; i--) {
+  console.log("El valor de i es: " + i);
+}
+//
+var i = 0;
+while (i < 5) {
+  console.log("El valor de i es: " + i);
+  i++;
+}
+//
+var i = 10;
+while (i >= 2) {
+  console.log("El valor de i es: " + i);
+  i--;
+}
+
+/* 3️⃣ Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
+
+Pista: puedes usar la función prompt de JavaScript.
+*/
+//usar prompt para consultar cuanto es 2 + 2, si se responde correcto mostrar mensaje de felicitaciones, si responde mal vuelve a preguntar
+let respuesta = prompt("¿Cuánto es 2 + 2?");
+while (respuesta != "4") {
+  respuesta = prompt("¿Cuánto es 2 + 2?");
+}
+console.log("Felicitaciones, has respondido correctamente");
