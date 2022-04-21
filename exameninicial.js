@@ -219,3 +219,46 @@ while (respuesta != "4") {
   respuesta = prompt("¿Cuánto es 2 + 2?");
 }
 console.log("Felicitaciones, has respondido correctamente");
+
+//Listas
+/*1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+
+¿Qué es un array?
+r. un array es una coleccion de datos que se pueden acceder por un indice numerico
+
+¿Qué es un objeto?
+r. un objeto es una coleccion de datos que se pueden acceder por una llave
+
+¿Cuándo es mejor usar objetos o arrays?
+r. cuando se necesita una coleccion de datos que no sean numeros, o cuando se necesita una coleccion de datos que no sean strings
+
+¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+r. si, puedes mezclar arrays con objetos o objetos con arrays
+*/
+//2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+const array = ["Hola", "Mundo", "!"];
+const imprimirPrimerElemento = (array) => {
+  console.log(array[0]);
+};
+imprimirPrimerElemento(array);
+
+//3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+const array = ["Hola", "Mundo", "!"];
+const imprimirElementos = (array) => {
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
+};
+imprimirElementos(array);
+//4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+const objeto = {
+  nombre: "Juan",
+  apellido: "Perez",
+  edad: 30,
+};
+const imprimirElementos = (objeto) => {
+  for (let i in objeto) {
+    console.log(objeto[i]);
+  }
+};
+imprimirElementos(objeto);
